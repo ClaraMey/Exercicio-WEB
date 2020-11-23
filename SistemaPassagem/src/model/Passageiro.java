@@ -3,6 +3,7 @@ package model;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
 @Entity
 public class Passageiro {
@@ -14,17 +15,20 @@ public class Passageiro {
 	private String email;
 	private String cpf;
 	private String senha;
+	//@ManyToOne
+	private Passagem passagem;
 	
 	public Passageiro() {
 		super();
 	}
 
-	public Passageiro(String nome, String email, String cpf, String senha) {
+	public Passageiro(String nome, String email, String cpf, String senha, Passagem passagem) {
 		super();
 		this.nome = nome;
 		this.email = email;
 		this.cpf = cpf;
 		this.senha = senha;
+		this.passagem = passagem;
 	}
 
 	public int getId() {
@@ -67,8 +71,13 @@ public class Passageiro {
 		this.senha = senha;
 	}
 	
-	
-	
+	public Passagem getPassagem() {
+		return passagem;
+	}
+
+	public void setPassagem(Passagem passagem) {
+		this.passagem = passagem;
+	}
 	
 	
 	
