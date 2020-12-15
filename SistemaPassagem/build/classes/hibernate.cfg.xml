@@ -6,7 +6,7 @@
         <property name="connection.driver_class">org.postgresql.Driver</property>
         <property name="dialect">org.hibernate.dialect.PostgreSQLDialect</property>
 
-        <property name="connection.url">jdbc:postgresql://localhost:5432/projeto_db</property>
+        <property name="connection.url">jdbc:postgresql://localhost:5432/sistema-passagem_db</property>
         <property name="connection.username">postgres</property>
         <property name="connection.password">POSTGRES</property>
 

@@ -1,11 +1,9 @@
 package model;
 
-import java.util.Date;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.OneToOne;
+import javax.persistence.ManyToOne;
 
 @Entity
 public class Itinerario {
@@ -13,25 +11,34 @@ public class Itinerario {
 	@Id
 	@GeneratedValue
 	private int id;
-	private Date data_embarq;
-	private Date hora_embarq;
+	private String data_embarq;
+	private String hora_embarq;
 	private String origem;
 	private String destino;
-	private int num_polt;
-	//@OneToOne
+	private double valor;
+	@ManyToOne
 	private Onibus onibus;
 	
 	public Itinerario() {
 		super();
 	}
 
-	public Itinerario(Date data_embarq, Date hora_embarq, String origem, String destino, int num_polt, Onibus onibus) {
+	public Itinerario(String data_embarq, String hora_embarq, String origem, String destino, double valor, Onibus onibus) {
 		super();
 		this.data_embarq = data_embarq;
 		this.hora_embarq = hora_embarq;
 		this.origem = origem;
 		this.destino = destino;
-		this.num_polt = num_polt;
+		this.valor = valor;
+		this.onibus = onibus;
+
+	}
+
+	public Onibus getOnibus() {
+		return onibus;
+	}
+
+	public void setOnibus(Onibus onibus) {
 		this.onibus = onibus;
 	}
 
@@ -43,19 +50,19 @@ public class Itinerario {
 		this.id = id;
 	}
 
-	public Date getData_embarq() {
+	public String getData_embarq() {
 		return data_embarq;
 	}
 
-	public void setData_embarq(Date data_embarq) {
+	public void setData_embarq(String data_embarq) {
 		this.data_embarq = data_embarq;
 	}
 
-	public Date getHora_embarq() {
+	public String getHora_embarq() {
 		return hora_embarq;
 	}
 
-	public void setHora_embarq(Date hora_embarq) {
+	public void setHora_embarq(String hora_embarq) {
 		this.hora_embarq = hora_embarq;
 	}
 
@@ -75,22 +82,12 @@ public class Itinerario {
 		this.destino = destino;
 	}
 
-	public int getNum_polt() {
-		return num_polt;
+	public double getValor() {
+		return valor;
 	}
 
-	public void setNum_polt(int num_polt) {
-		this.num_polt = num_polt;
+	public void setValor(double valor) {
+		this.valor = valor;
 	}
-
-	public Onibus getOnibus() {
-		return onibus;
-	}
-
-	public void setOnibus(Onibus onibus) {
-		this.onibus = onibus;
-	}
-	
-	
 	
 }

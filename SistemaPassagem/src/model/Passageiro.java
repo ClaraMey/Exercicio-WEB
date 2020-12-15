@@ -15,20 +15,17 @@ public class Passageiro {
 	private String email;
 	private String cpf;
 	private String senha;
-	//@ManyToOne
-	private Passagem passagem;
 	
 	public Passageiro() {
 		super();
 	}
 
-	public Passageiro(String nome, String email, String cpf, String senha, Passagem passagem) {
+	public Passageiro(String nome, String email, String cpf, String senha) {
 		super();
 		this.nome = nome;
 		this.email = email;
 		this.cpf = cpf;
 		this.senha = senha;
-		this.passagem = passagem;
 	}
 
 	public int getId() {
@@ -69,14 +66,6 @@ public class Passageiro {
 
 	public void setSenha(String senha) {
 		this.senha = senha;
-	}
-	
-	public Passagem getPassagem() {
-		return passagem;
-	}
-
-	public void setPassagem(Passagem passagem) {
-		this.passagem = passagem;
 	}
 	
 	

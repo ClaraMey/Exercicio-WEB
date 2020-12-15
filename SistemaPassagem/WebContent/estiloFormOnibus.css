@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #5F7C8A;
+    font: normal 12pt Arial;
+}
+#nav{
+    width: 100%;
+    height: 12vh;
+    background-color:#B7C6CE;
+    box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.76);
+    float: left;
+}
+#imagem{
+    width: 25%;
+    padding: 5px;
+    margin-top: -2px;
+    float: left;
+}
+#logo{
+    float: left;
+    width: 180px;
+}
+#tit{
+    width: 40%;
+    float: left;
+    
+}
+#logo-tit{
+    float: left;
+    width: 400px;
+    margin-left: 180px;
+    padding: 10px;
+    margin-top: -7px;
+}
+#login{
+    width: 35%;
+    float: left;
+}
+#login li{
+    float: right;
+    margin-top: 40px;
+    font-size: 15pt;
+}
+#login a {
+    text-decoration: none;
+}
+#login a:hover{
+    transition: 1s;
+    color: white;
+}
+section{
+    background-color: #5F7C8A;
+    width: 100%;
+    float: left;
+    height: 80vh;
+}
+#formulario{
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    width: 500px;
+    float: left;
+    margin-left: 700px;
+    margin-top: 100px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.685); 
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #5F7C8A;
+}
+#formulario input{
+    font-size: 12pt;
+    width: 80%;
+    height: 45px;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+    margin: 10px 0;
+}
+#btn{
+    width: 50%;
+    height: 30px;
+    cursor: pointer;
+    background-color: #5F7C8A;
+    color:white;
+    border:0;
+    transition: 1s;
+    border-radius: 10px;
+} 
+#lista{
+    width: 10%;
+    height: 45px;   
+    border-radius: 10px;
+    background-color:#B7C6CE;
+    margin: auto;
+    margin-top: 600px;
+    padding: 15px;
+    text-align: center;
+    border: 0;
+}
+#linkLista{
+    text-decoration: none;
+    font-size: 11pt;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#btn:hover{
+    background-color: #4A5F6A;
+}
+footer{
+    width: 100%;
+    height: 8vh;
+    background-color:#B7C6CE;
+    float: left;
+}
+#rodape{
+    width: 100%;
+    height: 70px;
+    background-color:#B7C6CE;
+    float: left;
+}
+#foot{
+    text-align: center;
+}

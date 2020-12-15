@@ -20,7 +20,7 @@
 		
 		new DAOPassageiro().inserirPassageiro(passageiro);
 		
-		response.sendRedirect("listar.jsp");
+		response.sendRedirect("listaPassageiro.jsp");
 	
 	%>
 
